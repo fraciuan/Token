@@ -1,0 +1,14 @@
+.front {
+    height: 7rem;
+    width: 7rem;
+    background-color: var(--color-primary-light);
+    margin: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    display: none;
+}
