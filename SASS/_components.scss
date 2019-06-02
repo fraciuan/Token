@@ -1,6 +1,7 @@
 .item-box {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .item {
@@ -9,12 +10,24 @@
 .front {
     height: 7rem;
     width: 7rem;
-    background-color: var(--color-primary-light);
+    //background-color: var(--color-grey-dark-1);
     margin: 3px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &__img {
+        height: 5.5rem;
+        width: auto;
+        border-radius: 50%;
+        transition: transform .3s;
+        backface-visibility: hidden;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
 }
 
 .back {
@@ -74,6 +87,7 @@
     }
 
     &__title {
+        text-transform: uppercase;
         font-size: 3rem;
         margin-bottom: 2rem;
 

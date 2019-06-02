@@ -42,7 +42,8 @@ GENERATE */
 result */
 .item-box {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 .item {
   display: flex; }
@@ -50,11 +51,18 @@ result */
 .front {
   height: 7rem;
   width: 7rem;
-  background-color: var(--color-primary-light);
   margin: 3px;
   display: flex;
   align-items: center;
   justify-content: center; }
+  .front__img {
+    height: 5.5rem;
+    width: auto;
+    border-radius: 50%;
+    transition: transform .3s;
+    backface-visibility: hidden; }
+    .front__img:hover {
+      transform: scale(1.5); }
 
 .back {
   display: none; }
@@ -95,6 +103,7 @@ result */
     margin-bottom: 2rem;
     padding: 2rem; }
   .popup__title {
+    text-transform: uppercase;
     font-size: 3rem;
     margin-bottom: 2rem;
     display: flex;
@@ -124,9 +133,13 @@ result */
   font-size: 1.8rem;
   text-align: center; }
 
+h1 {
+  text-transform: uppercase; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
+  padding: 3rem;
   background-color: white;
   box-shadow: var(--shadow-dark);
   display: flex;
