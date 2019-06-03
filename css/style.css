@@ -40,13 +40,11 @@ main {
 GENERATE */
 /* ///////////////////////
 result */
-.item-box {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-
 .item {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
+  .item__img-box {
+    display: flex; }
 
 .front {
   height: 7rem;

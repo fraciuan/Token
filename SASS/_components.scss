@@ -1,12 +1,18 @@
-.item-box {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+// .item-box {
+//     display: flex;
+//     flex-direction: column;
+// }
 
 .item {
     display: flex;
+    flex-direction: column;
+
+    &__img-box {
+        display: flex;
+        
+    }
 }
+
 .front {
     height: 7rem;
     width: 7rem;
