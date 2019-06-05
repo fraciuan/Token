@@ -3,13 +3,16 @@
   --color-primary: #eb2f64;
   --color-primary-light: #FF3366;
   --color-primary-dark: #BA265D;
-  --color-grey-light-1: #faf9f9;
-  --color-grey-light-2: #f4f2f2;
-  --color-grey-light-3: #f0eeee;
-  --color-grey-light-4: #ccc;
-  --color-grey-dark-1: #333;
-  --color-grey-dark-2: #777;
-  --color-grey-dark-3: #999;
+  --color-light-100: rgba(255, 255, 255, 1.00);
+  --color-light-070: rgba(255, 255, 255, .70);
+  --color-light-030: rgba(255, 255, 255, .30);
+  --color-light-012: rgba(255, 255, 255, .12);
+  --color-dark-087: rgba(0, 0, 0, .87);
+  --color-dark-054: rgba(0, 0, 0, .54);
+  --color-dark-026: rgba(0, 0, 0, .26);
+  --color-dark-012: rgba(0, 0, 0, .12);
+  --color-alto-010: rgba(255, 255, 255, .10);
+  --color-alto-020: rgba(255, 255, 255, .20);
   --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
   --line: solid 1px var(--color-grey-light-2); }
@@ -33,9 +36,6 @@ body {
   padding: 3rem;
   font-family: "Lato", sans-serif; }
 
-main {
-  background-image: url(img/bg.jpg); }
-
 /* ///////////////////////
 GENERATE */
 /* ///////////////////////
@@ -44,7 +44,9 @@ result */
   display: flex;
   flex-direction: column; }
   .item__img-box {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff; }
 
 .front {
   height: 7rem;
