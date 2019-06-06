@@ -1,25 +1,18 @@
 .header {
-    
+    background-color: var(--color-dark-087);
+    height: 15rem;;
     font-size: 1.8rem;
     text-align: center;
     
-}
-
-h1 {
-    text-transform: uppercase;
 }
 
 
 
 .container {
     max-width: 120rem;
-    margin: 8rem auto;
     padding: 3rem;
-    background-color: rgb(255, 255, 255);
-    box-shadow: var(--shadow-dark);
-
     
-
+    
     display: flex;
     flex-direction: column;
     
