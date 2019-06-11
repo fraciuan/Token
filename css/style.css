@@ -57,7 +57,8 @@ h2 {
 
 .item {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 auto; }
   .item__title {
     color: var(--color-grey-light-2);
     display: flex;
@@ -72,12 +73,12 @@ h2 {
     .item__title-img {
       width: 3rem;
       height: 3rem;
-      border-radius: 50%;
-      z-index: 9999; }
+      border-radius: 50%; }
   .item__box {
+    max-width: 85rem;
     background-color: var(--color-light-100);
     box-shadow: var(--shadow-light);
-    margin: 2rem 5rem;
+    margin-top: 2rem;
     padding: 1rem;
     border-radius: 3px;
     position: relative; }

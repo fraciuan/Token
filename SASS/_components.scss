@@ -20,6 +20,7 @@ h2 {
 .item {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 
 
     &__title {
@@ -39,18 +40,18 @@ h2 {
             width: 3rem;
             height: 3rem;
             border-radius: 50%;
-            z-index: 9999;
+            
             
         }
         
     }
 
     &__box {
-        
+        max-width: 85rem;
         background-color:var(--color-light-100);
         box-shadow: var(--shadow-light);
 
-        margin: 2rem 5rem;
+        margin-top: 2rem;
         padding: 1rem;
         border-radius: 3px;
         position: relative;
