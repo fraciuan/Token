@@ -13,15 +13,19 @@ h1 {
 }
 
 
-
+h2 {
+    font-size: 1.4rem;
+    padding: 3px;
+}
 .item {
     display: flex;
     flex-direction: column;
 
 
     &__title {
+        
         color: var(--color-grey-light-2);
-        display: inline;
+        display: flex;
         text-transform: uppercase;
         background-color: var(--color-primary);
         padding: 5px;
@@ -35,6 +39,7 @@ h1 {
             width: 3rem;
             height: 3rem;
             border-radius: 50%;
+            z-index: 9999;
             
         }
         
