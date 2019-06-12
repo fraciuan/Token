@@ -123,6 +123,8 @@ h2 {
         height: auto;
         background-color: #fff;
         box-shadow: var(--shadow-light);
+        text-align: center;
+
 
         position: absolute;
         top: 50%;
@@ -168,13 +170,16 @@ h2 {
         display: flex;
         justify-content: center;
 
+        text-align: justify;
+
     }
 
-    &__btn {
+    &__btn,
+    &__btn:link,
+    &__btn:visited {
         text-transform: uppercase;
         text-decoration: none;
-        width: 20%;
-        margin: 2rem auto;
+        
         padding: 1.5rem 4rem;
         display: inline-block;
         border-radius: 10rem;
@@ -184,6 +189,32 @@ h2 {
         font-size: 1.6rem;
         border: none;
         cursor: pointer;
+        position: relative;
+
+        // &::after {
+        //     content: "";
+        //     display: inline-block;
+        //     height: 100%;
+        //     width: 100%;
+        //     border-radius: 10rem;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     z-index: -1;
+        //     -webkit-transition: all .4s;
+        //     transition: all .4s;
+        // }
+
+        // .btn, .btn:link, .btn:visited {
+        //     
+        //     
+        //     -webkit-transition: all .2s;
+        //     transition: all .2s;
+        //     
+        //     
+        // }
+
+        
 
         
     }
