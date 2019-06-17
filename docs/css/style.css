@@ -106,6 +106,19 @@ h2 {
 .back {
   display: none; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .2;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .popup {
   height: 100vh;
   width: 100%;
@@ -178,5 +191,6 @@ h2 {
 .container {
   max-width: 120rem;
   padding: 3rem;
+  position: relative;
   display: flex;
   flex-direction: column; }
