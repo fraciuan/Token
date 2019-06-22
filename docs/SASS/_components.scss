@@ -210,17 +210,21 @@ h2 {
         justify-content: center;
         text-align: justify;
 
-        
 
         @media (max-width: 600px) {
-            
-            height: 300px;
-            overflow: scroll;
             margin-bottom: 1rem;
-            
+        }
+
+        &-long {
+            @media (max-width: 600px) {
+                height: 300px;
+                overflow: scroll;
+                margin-bottom: 1rem;
+            }
         }
 
     }
+
 
     &__btn,
     &__btn:link,
