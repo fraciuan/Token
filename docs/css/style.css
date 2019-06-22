@@ -179,7 +179,9 @@ h2 {
     text-align: justify; }
     @media (max-width: 600px) {
       .popup__text {
-        padding-top: 0; } }
+        height: 300px;
+        overflow: scroll;
+        margin-bottom: 1rem; } }
   .popup__btn, .popup__btn:link, .popup__btn:visited {
     text-transform: uppercase;
     text-decoration: none;
