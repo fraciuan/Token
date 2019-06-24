@@ -1,10 +1,26 @@
+.logo {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding-top: 2rem;
 
+    
+    animation: logo_rotate 3s linear infinite;
+      
+}
+
+@keyframes logo_rotate {
+    0%   { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+  }
 
 h1 {
     font-size: 5rem;
     color: #fff;
     padding: 2rem 0 1.5rem 0;
     text-transform: uppercase;
+
+    display: inline;
     
 }
 .subtitle {
